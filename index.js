@@ -12,7 +12,7 @@ app.use("/",router);
 const PORT=8000;
 const db_url="mongodb+srv://rraj58361:12345@cluster0.5qwwjc1.mongodb.net/?retryWrites=true&w=majority";
 connection(db_url);
-app.listen(PORT,()=>{
+app.listen(PORT,"0.0.0.0",()=>{
     console.log(`Server is running at PORT ${PORT}`)
 });
 
